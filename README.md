@@ -1,7 +1,7 @@
 ##  Project Links Active Now!
-[Link to Project's HomePage](https://cloudflare-coding-challenge-2020.larry-chiem.workers.dev/)
+[Link to Project's HomePage](https://cloudflare-coding-challenge-2020.ronak-patel.workers.dev/)
 
-[Link to "/Links" Page ](https://cloudflare-coding-challenge-2020.larry-chiem.workers.dev/links)
+[Link to "/Links" Page ](https://cloudflare-coding-challenge-2020.ronak-patel.workers.dev/links)
 
 
 
