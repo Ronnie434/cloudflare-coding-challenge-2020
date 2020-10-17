@@ -47,13 +47,13 @@ class ProfileTransformer {
     element.get
   }
 }
-// class SocialTransformer {
-//   async element(element) {
-//     element.removeAttribute('style');
-//     element.append("<a href=\"https://linkedin.com/in/ronniepatel\"><img src=\"https://ronakpatel.me/img/IMG_2.JPG\"></a>", { html: true })
-//     element.append("<a href=\"https://github.com/Ronnie434\"><img src=\"https://ronakpatel.me/img/IMG_2.JPG\"></a>", { html: true })
-//   }
-// }
+class SocialTransformer {
+  async element(element) {
+    element.removeAttribute('style');
+    element.append("<a href=\"https://linkedin.com/in/ronniepatel\"><img src=\"https://www.flaticon.com/svg/static/icons/svg/61/61109.svg\"></a>", { html: true })
+    element.append("<a href=\"https://github.com/Ronnie434\"><img src=\"https://www.flaticon.com/svg/static/icons/svg/37/37318.svg\"></a>", { html: true })
+  }
+}
 
 class TitleTransformer {
   async element(element) {
@@ -94,6 +94,7 @@ async function handleRequest(event) {
       .on("img#avatar", new AvatarTransformer())
       .on("h1#name", new UsernameTransformer())
       .on("title", new TitleTransformer())
+      .on("div#social", new SocialTransformer())
       .on("body", new BackgroundTransformer())
       .transform(Response);
   } else {
