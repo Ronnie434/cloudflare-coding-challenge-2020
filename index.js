@@ -25,7 +25,7 @@ class AvatarTransformer {
 }
 class BackgroundTransformer {
   async element(element) {
-    element.setAttribute("class", "bg-blue-700");
+    element.setAttribute("class", "bg-blue-900");
   }
 }
 class LinksTransformer {
